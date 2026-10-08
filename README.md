@@ -41,8 +41,7 @@ The top-level architecture demonstrates how three primary entities interact with
 * **Normal Users** and **Special Users** hold "View" privileges to fetch data from the Bus Management Database.
 * **Admins** maintain full "Control" privileges over the Bus Management Database.
 
-* <img width="797" height="362" alt="image" src="https://github.com/user-attachments/assets/6489bbce-185f-4071-bc59-61e63193aae7" />
-
+<img width="797" height="362" alt="DFD Level 0" src="https://github.com/user-attachments/assets/6489bbce-185f-4071-bc59-61e63193aae7" />
 
 **2. Core Processes (DFD Level 1)**
 The system branches into three main processes based on user roles:
@@ -50,16 +49,15 @@ The system branches into three main processes based on user roles:
 * **Availability Management (Special Users):** Conductors provide real-time updates regarding bus location and availability to the database.
 * **System Modification (Admin):** Admins supply the database with new bus details, employee profiles, and route adjustments.
 
-<img width="762" height="392" alt="image" src="https://github.com/user-attachments/assets/c215ef06-fd81-4d03-bb70-77cfc5adaabb" />
-
+<img width="762" height="392" alt="DFD Level 1" src="https://github.com/user-attachments/assets/c215ef06-fd81-4d03-bb70-77cfc5adaabb" />
 
 **3. Detailed Sub-Processes (DFD Level 2)**
 * **Process 2.0 (Special User Actions):** Special Users trigger four primary sub-processes: Providing Real-Time Location, Toggling Bus Availability, Providing Bus Employee Presence, and Submitting Bus Invoices to the database.
 * **Process 3.0 (Admin Actions):** Admin privileges govern four distinct administrative sub-processes: Bus Registration, Employee Registration, Route Registration, and Updating/Modifying existing database records.
 
-* <img width="726" height="371" alt="image" src="https://github.com/user-attachments/assets/d8ff0f28-33f7-4e72-a013-edc7e6d2e475" />
-* <img width="671" height="335" alt="image" src="https://github.com/user-attachments/assets/76d131b2-ec24-494f-a58b-3764b72c4a0e" />
-
+<img width="726" height="371" alt="DFD Level 2.0" src="https://github.com/user-attachments/assets/d8ff0f28-33f7-4e72-a013-edc7e6d2e475" />
+<br>
+<img width="671" height="335" alt="DFD Level 3.0" src="https://github.com/user-attachments/assets/76d131b2-ec24-494f-a58b-3764b72c4a0e" />
 
 ### Database Structure (ER Model)
 The Firestore backend utilizes the following primary entities to organize data relationships:
@@ -69,56 +67,23 @@ The Firestore backend utilizes the following primary entities to organize data r
 * **Route & Schedule:** Links source (`From`) and destination (`To`) under `Route Id`, mapping directly to `Arrival Time` and `Departure Time` via `Schedule Id`.
 * **Invoice:** Captures transactional data including `Invoice Id`, `Total Payment`, and `Date`.
 
-* <img width="903" height="970" alt="image" src="https://github.com/user-attachments/assets/738dcaf0-2ecf-47c3-879e-893b2352c2c9" />
+<img width="903" height="970" alt="ER Diagram" src="https://github.com/user-attachments/assets/738dcaf0-2ecf-47c3-879e-893b2352c2c9" />
 
 ---
 
-## Screenshots
+## 📱 Screenshots
 
-**1. Home Page**
-* <img width="337" height="607" alt="image" src="https://github.com/user-attachments/assets/0bcfd1f6-949d-4c3f-afde-7b2573279525" />
-
-**2. Menu Screen**
-* <img width="251" height="502" alt="image" src="https://github.com/user-attachments/assets/15461de0-cd1d-446e-9fe7-5153460aa1ca" />
-
-**3. Bus Availability**
-* <img width="250" height="502" alt="image" src="https://github.com/user-attachments/assets/46046a2a-aaa2-4e66-a400-cb0579ed22a5" />
-
-**4. Bus Availability**
-* <img width="250" height="502" alt="image" src="https://github.com/user-attachments/assets/46046a2a-aaa2-4e66-a400-cb0579ed22a5" />
-
-**5. Location of the Bus**
-* <img width="250" height="503" alt="image" src="https://github.com/user-attachments/assets/41bcd604-ca4c-4e32-91f7-ea92644df966" />
-
-**6. Bus Location**
-* <img width="252" height="495" alt="image" src="https://github.com/user-attachments/assets/4bb41341-6f3e-4dda-8097-2b70040e0707" />
-
-**7. User Location**
-* <img width="252" height="503" alt="image" src="https://github.com/user-attachments/assets/04b1d347-bb9b-493a-a900-2b58231fe7a1" />
-
-**8. Login Page**
-* <img width="248" height="498" alt="image" src="https://github.com/user-attachments/assets/c7cf0132-90d4-4696-8d94-c71169f36f0d" />
-
-**9. Admin Page**
-* <img width="245" height="497" alt="image" src="https://github.com/user-attachments/assets/25c2ef64-bc80-4b79-8cab-c083b7a54003" />
-
-**10. Sign up new Bus**
-* <img width="252" height="500" alt="image" src="https://github.com/user-attachments/assets/a7b3cc38-01ab-4558-a288-fb28d0a4e7b1" />
-
-**11. Sign up new Bus 2**
-* <img width="247" height="500" alt="image" src="https://github.com/user-attachments/assets/c3e2db1a-797b-4366-a7f6-96dccdefeb76" />
-
-**11. Time**
-* <img width="251" height="505" alt="image" src="https://github.com/user-attachments/assets/efef8db7-69dd-442c-824b-ff852940c3b0" />
-
-**12. Bus Details**
-* <img width="247" height="506" alt="image" src="https://github.com/user-attachments/assets/d2d54390-8fa5-4f8c-9f37-c98759cce772" />
-
-**13. Invoice Management**
-* <img width="250" height="505" alt="image" src="https://github.com/user-attachments/assets/457e4998-0d6f-49ef-a10f-4894736884dd" />
-
-**13. Add New Invoice**
-* <img width="252" height="503" alt="image" src="https://github.com/user-attachments/assets/d0aae7ac-470c-40f4-b3dd-6c130d032914" />
+| Home Page | Menu Screen | Bus Availability |
+| :---: | :---: | :---: |
+| <img width="250" alt="Home Page" src="https://github.com/user-attachments/assets/0bcfd1f6-949d-4c3f-afde-7b2573279525" /> | <img width="250" alt="Menu Screen" src="https://github.com/user-attachments/assets/15461de0-cd1d-446e-9fe7-5153460aa1ca" /> | <img width="250" alt="Bus Availability" src="https://github.com/user-attachments/assets/46046a2a-aaa2-4e66-a400-cb0579ed22a5" /> |
+| **Location of the Bus** | **Bus Location** | **User Location** |
+| <img width="250" alt="Location of the Bus" src="https://github.com/user-attachments/assets/41bcd604-ca4c-4e32-91f7-ea92644df966" /> | <img width="250" alt="Bus Location" src="https://github.com/user-attachments/assets/4bb41341-6f3e-4dda-8097-2b70040e0707" /> | <img width="250" alt="User Location" src="https://github.com/user-attachments/assets/04b1d347-bb9b-493a-a900-2b58231fe7a1" /> |
+| **Login Page** | **Admin Page** | **Sign up new Bus** |
+| <img width="250" alt="Login Page" src="https://github.com/user-attachments/assets/c7cf0132-90d4-4696-8d94-c71169f36f0d" /> | <img width="250" alt="Admin Page" src="https://github.com/user-attachments/assets/25c2ef64-bc80-4b79-8cab-c083b7a54003" /> | <img width="250" alt="Sign up new Bus" src="https://github.com/user-attachments/assets/a7b3cc38-01ab-4558-a288-fb28d0a4e7b1" /> |
+| **Sign up new Bus 2** | **Time** | **Bus Details** |
+| <img width="250" alt="Sign up new Bus 2" src="https://github.com/user-attachments/assets/c3e2db1a-797b-4366-a7f6-96dccdefeb76" /> | <img width="250" alt="Time" src="https://github.com/user-attachments/assets/efef8db7-69dd-442c-824b-ff852940c3b0" /> | <img width="250" alt="Bus Details" src="https://github.com/user-attachments/assets/d2d54390-8fa5-4f8c-9f37-c98759cce772" /> |
+| **Invoice Management** | **Add New Invoice** | |
+| <img width="250" alt="Invoice Management" src="https://github.com/user-attachments/assets/457e4998-0d6f-49ef-a10f-4894736884dd" /> | <img width="250" alt="Add New Invoice" src="https://github.com/user-attachments/assets/d0aae7ac-470c-40f4-b3dd-6c130d032914" /> | |
 
 --- 
 
@@ -127,7 +92,7 @@ The Firestore backend utilizes the following primary entities to organize data r
 ### Prerequisites
 * Flutter SDK (Version 3.0.0 or higher recommended)
 * Dart SDK
-* Android Studio or VS Code[cite: 16]
+* Android Studio or VS Code
 * A Firebase Project configured with Authentication and Firestore
 
 ### Installation
@@ -150,9 +115,9 @@ flutter pub get
 
 ```
 
+
 4. **Configure Mapbox & Firebase:**
 * Add your Mapbox public access token to the designated mapping widget.
-
 * Ensure your `google-services.json` (Android) and `GoogleService-Info.plist` (iOS) are placed in their respective root directories.
 
 
@@ -161,6 +126,8 @@ flutter pub get
 flutter run
 
 ```
+
+
 
 ## 📱 Minimum Device Requirements
 
