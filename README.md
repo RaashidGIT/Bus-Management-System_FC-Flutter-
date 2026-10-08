@@ -1,4 +1,3 @@
-```markdown
 # NextBus 🚌 - Bus Management System
 
 NextBus is a cross-platform Bus Management System developed using Flutter to streamline public transportation for passengers, conductors, and administrators. The application provides real-time bus tracking, digital invoicing, and dynamic schedule management to solve challenges like overcrowding, unpunctuality, and poor data integrity in traditional transit systems.
