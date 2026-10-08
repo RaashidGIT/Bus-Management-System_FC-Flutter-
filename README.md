@@ -82,8 +82,7 @@ The Firestore backend utilizes the following primary entities to organize data r
 
 | Home Page | Menu Screen | Bus Availability |
 | :---: | :---: | :---: |
-| <img width="250" height="502" alt="image" src="https://github.com/user-attachments/assets/c4de3087-2726-4043-8334-01e60a823197" />
- | <img width="250" alt="Menu Screen" src="https://github.com/user-attachments/assets/15461de0-cd1d-446e-9fe7-5153460aa1ca" /> | <img width="250" alt="Bus Availability" src="https://github.com/user-attachments/assets/46046a2a-aaa2-4e66-a400-cb0579ed22a5" /> |
+| <img width="250" height="502" alt="image" src="https://github.com/user-attachments/assets/c4de3087-2726-4043-8334-01e60a823197" /> | <img width="250" alt="Menu Screen" src="https://github.com/user-attachments/assets/15461de0-cd1d-446e-9fe7-5153460aa1ca" /> | <img width="250" alt="Bus Availability" src="https://github.com/user-attachments/assets/46046a2a-aaa2-4e66-a400-cb0579ed22a5" /> |
 | **Location of the Bus** | **Bus Location** | **User Location** |
 | <img width="250" alt="Location of the Bus" src="https://github.com/user-attachments/assets/41bcd604-ca4c-4e32-91f7-ea92644df966" /> | <img width="250" alt="Bus Location" src="https://github.com/user-attachments/assets/4bb41341-6f3e-4dda-8097-2b70040e0707" /> | <img width="250" alt="User Location" src="https://github.com/user-attachments/assets/04b1d347-bb9b-493a-a900-2b58231fe7a1" /> |
 | **Login Page** | **Admin Page** | **Sign up new Bus** |
